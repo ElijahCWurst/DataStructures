@@ -20,7 +20,7 @@ int main() {
 	while (repeat) {
 		string response = "";
 		cout << endl;
-		cout << "--------MAIN-MENU--------" << endl
+		cout << "-----------------MAIN-MENU-----------------" << endl
 			<< "1 - Press to make or change a reservation." << endl
 			<< "2 - Press to print all manifests." << endl
 			<< "3 - Press to run driver." << endl
