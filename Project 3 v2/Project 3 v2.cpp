@@ -125,11 +125,11 @@ void reservations(List<Flight*>& Flights) {
 	}
 	while (repeat) {
 		string response = "";
-		cout << endl << "--------List-of-Passengers--------" << endl
-			<< "1 - Insert passenger onto flight " << flightNum << "." << endl
-			<< "2 - Remove passenger from flight " << flightNum << "." << endl
-			<< "3 - List passengers on flight " << flightNum << "." << endl
-			<< "4 - List passengers by reverse order." << endl
+		cout << "\n--------List-of-Passengers--------\n"
+			<< "1 - Insert passenger onto flight " << flightNum << ".\n"
+			<< "2 - Remove passenger from flight " << flightNum << ".\n"
+			<< "3 - List passengers on flight " << flightNum << ".\n"
+			<< "4 - List passengers by reverse order.\n"
 			<< "0 - Exit Flight " << flightNum << "." << endl;
 		getline(cin, response);
 
