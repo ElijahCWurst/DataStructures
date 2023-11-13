@@ -33,7 +33,7 @@ void BST::insert(Word* word) {
 			temp = temp->right;
 		}
 		else if (word->name == temp->info->name) {
-			//This is where I need to add the current verse number to the word.
+			//This is where I need to add the current verse number to the word verse vector.
 		}
 	}
 	if (root == nullptr) {
