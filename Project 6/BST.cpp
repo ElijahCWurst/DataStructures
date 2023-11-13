@@ -39,10 +39,10 @@ void BST::insert(Word* word) {
 	if (root == nullptr) {
 		root = new BSTNode(word);
 	}
-	else if (word->name < temp->info->name) {
+	else if (word->name < prev->info->name) {
 		prev->left = new BSTNode(word);
 	}
-	else if (word->name > temp->info->name) {
+	else if (word->name > prev->info->name) {
 		prev->right = new BSTNode(word);
 	}
 }
