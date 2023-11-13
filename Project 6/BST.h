@@ -9,7 +9,7 @@ public:
 	BST();
 	bool isEmpty() const;
 	void inOrder();
-	void insert(Word*);
+	void insert(Word*, int);
 protected:
 	BSTNode* root;
 	void inOrder(BSTNode*);

@@ -21,7 +21,7 @@ void BST::inOrder(BSTNode* node) {
 	}
 }
 
-void BST::insert(Word* word) {
+void BST::insert(Word* word, int verseNumber) {
 	BSTNode* temp = root;
 	BSTNode* prev = nullptr;
 	while (temp != nullptr) { // This finds where the node belongs or adds a number if it's already there.
@@ -33,7 +33,7 @@ void BST::insert(Word* word) {
 			temp = temp->right;
 		}
 		else if (word->name == temp->info->name) {
-			//This is where I need to add the current verse number to the word.
+			
 		}
 	}
 	if (root == nullptr) {
