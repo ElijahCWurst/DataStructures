@@ -33,16 +33,20 @@ void BST::insert(Word* word, int verseNumber) {
 			temp = temp->right;
 		}
 		else if (word->name == temp->info->name) {
-			
+			temp->info->location.push_back(verseNumber);
+			break;
 		}
 	}
 	if (root == nullptr) {
 		root = new BSTNode(word);
+		word->location.push_back(verseNumber);
 	}
 	else if (word->name < prev->info->name) {
 		prev->left = new BSTNode(word);
+		word->location.push_back(verseNumber);
 	}
 	else if (word->name > prev->info->name) {
 		prev->right = new BSTNode(word);
+		word->location.push_back(verseNumber);
 	}
 }
