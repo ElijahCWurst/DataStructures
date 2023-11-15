@@ -10,6 +10,8 @@ public:
 	bool isEmpty() const;
 	void inOrder();
 	void insert(Word*, int);
+
+	void PrintStructure(void (*func) (Word*, int, int, vector<int>*)) { root->PrintStructure(0, func, 0, new vector<int>()); }
 protected:
 	BSTNode* root;
 	void inOrder(BSTNode*);
