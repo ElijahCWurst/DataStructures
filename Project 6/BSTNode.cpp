@@ -10,6 +10,7 @@ BSTNode::BSTNode(Word* info) {
 	right = nullptr;
 }
 
+//Created by Tim Zink
 void BSTNode::PrintStructure(int depth, void (*func)(Word*, int, int, vector<int>*), int position, vector<int> *also)
 {
 	if (left != nullptr) {

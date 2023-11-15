@@ -9,6 +9,7 @@ using namespace std;
 string fixWord(string word);
 void addWord(string word, BST& tree, int verseNum);
 
+//This function was made by Tim Zink
 void printNode(Word* word, int depth, int position, vector<int>* also) {
 	for (int i = 0; i < depth; i++) {
 		if (find(also->begin(), also->end(), i) != also->end()) {
@@ -44,7 +45,7 @@ int main()
 
 	Tree.inOrder();
 
-	//Tree.PrintStructure(&printNode);
+	//Tree.PrintStructure(&printNode);  //This line prints out the entire tree visually. This function was made by Timothy Zink
 }
 
 // This function takes out all special symbols including punctuation. It also converts possessives 
