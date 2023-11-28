@@ -12,12 +12,24 @@ void BST::inOrder() {
 	BST::inOrder(root);
 }
 
+void BST::inOrder(ofstream& file) {
+	BST::inOrder(root, file);
+}
+
 //This will be used to print out the results at the end
 void BST::inOrder(BSTNode* node) {
 	if (node != nullptr) {
 		inOrder(node->left);
 		node->info->print(); // I'm not entirely sure this is correct lol EDIT: I sure hope it is because I've been putting it in lots of places...
 		inOrder(node->right);
+	}
+}
+
+void BST::inOrder(BSTNode* node, ofstream& file) {
+	if (node != nullptr) {
+		inOrder(node->left, file);
+		node->info->printToFile(file); // I'm not entirely sure this is correct lol EDIT: I sure hope it is because I've been putting it in lots of places...
+		inOrder(node->right, file);
 	}
 }
 

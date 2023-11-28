@@ -22,3 +22,15 @@ void Word::print() {
 		}
 	}
 }
+
+void Word::printToFile(ofstream& file) {
+	file << name << ": ";
+	for (int i = 0; i < location.size(); ++i) {
+		if (i == location.size() - 1) {
+			file << location[i] << "\n";
+		}
+		else {
+			file << location[i] << ", ";
+		}
+	}
+}

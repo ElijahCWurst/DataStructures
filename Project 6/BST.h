@@ -1,6 +1,7 @@
 #pragma once
 #include "BSTNode.h"
 #include "Word.h"
+#include <fstream>
 
 // Based off of the book for this course
 class BST
@@ -8,7 +9,9 @@ class BST
 public:
 	BST();
 	bool isEmpty() const;
+	//Prints out the entire wordlist
 	void inOrder();
+	void inOrder(ofstream&);
 	void insert(Word*, int);
 
 	//Created by Tim Zink
@@ -16,6 +19,7 @@ public:
 protected:
 	BSTNode* root;
 	void inOrder(BSTNode*);
+	void inOrder(BSTNode*, ofstream&);
 
 };
 
