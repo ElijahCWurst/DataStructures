@@ -62,8 +62,8 @@ int main(int argc, char* argv[])
 
 	int arraySize = sizedList.size();
 	int* data = new int[arraySize];
-	list<int>::iterator it = sizedList.begin();
 
+	list<int>::iterator it = sizedList.begin();
 	for (int i = 0; i < arraySize; ++i, ++it) {
 		data[i] = *it;
 	}
